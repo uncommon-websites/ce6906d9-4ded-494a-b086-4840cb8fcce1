@@ -6,16 +6,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	centered={true}
+	title="Transform startup ideas into fundable businesses"
+	subtitle="Complete product squads that bridge the gap from concept to funding-ready MVP with strategic validation and full-stack expertise."
+	customers={[
+		{
+			name: "Sarah Chen",
+			position: "VP of Product",
+			imageSrc: "/generated/image-a-professional-woman-executive-standing-.webp"
+		},
+		{
+			name: "Marcus Thompson",
+			position: "Director of Engineering",
+			imageSrc: "/generated/image-a-professional-man-director-in-a-contemp.webp"
+		},
+		{
+			name: "Elena Rodriguez",
+			position: "Head of Product",
+			imageSrc: "/generated/image-a-professional-woman-product-leader-at-h.webp"
+		},
+		{
+			name: "David Park",
+			position: "VP of Engineering",
+			imageSrc: "/generated/image-a-professional-man-vp-in-a-vibrant-start.webp"
+		},
+		{
+			name: "Amara Okafor",
+			position: "Chief Product Officer",
+			imageSrc: "/generated/image-a-professional-woman-tech-executive-in-a.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/stripe.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/notion.so/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/figma.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/slack.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
