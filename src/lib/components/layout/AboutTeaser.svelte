@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Andrew Verboncouer",
+		role: "Partner & CEO",
+		image: "/generated/image-a-professional-startup-founder-stands-co.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"Too many brilliant ideas die in the gap between vision and execution. We built Headway because founders deserve partners who measure success by funding outcomes, not billable hours"`}
 			/>
 
 			<!-- Team Member & CTA Section -->
